@@ -1,13 +1,10 @@
-drop database db_forum;
-create database db_forum;
-alter user 'root'@'localhost' identified with mysql_native_password by '';
+DROP DATABASE db_forum;
+CREATE DATABSE db_forum;
+SET PASSWORD FOR 'root'@localhost = PASSWORD("");
 
-use db_forum;
+USE db_forum;
 
-create table post (
+CREATE TABLE post (
     Poster varchar(255),
     Post text
 );
-
-insert into post
-values ('Test User', 'Test post');
