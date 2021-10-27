@@ -28,6 +28,7 @@ jobs:
         with:
           node-version: 14
           registry-url: https://registry.npmjs.org/
+      - run: npm version minor
       - run: npm ci
       - run: npm publish --access public
         env:
