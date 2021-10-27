@@ -1,6 +1,6 @@
 {
-  "name": "cont4new",
-  "version": "0.0.0",
+  "name": "lachlanmcnicol@cont4new",
+  "version": "0.0.1",
   "private": false,
   "scripts": {
     "start": "node ./bin/www",
