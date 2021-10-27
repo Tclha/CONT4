@@ -5,7 +5,7 @@ var mysql = require('mariadb');
 var pool = mysql.createPool({
   host: 'localhost',
   user: 'root',
-  password: '',
+  password: 'cont4',
   database: 'db_forum'
 });
 pool.getConnection();

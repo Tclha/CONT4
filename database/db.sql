@@ -1,6 +1,6 @@
 DROP DATABASE db_forum;
-CREATE DATABSE db_forum;
-SET PASSWORD FOR 'root'@localhost = PASSWORD("");
+CREATE DATABASE db_forum;
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'cont4';
 
 USE db_forum;
 
