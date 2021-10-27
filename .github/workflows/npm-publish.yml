@@ -32,4 +32,4 @@ jobs:
       - run: npm ci
       - run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: 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
+          NODE_AUTH_TOKEN: "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"
