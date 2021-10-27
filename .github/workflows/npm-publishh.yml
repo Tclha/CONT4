@@ -31,8 +31,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 14
-          registry-url: https://npm.pkg.github.com/
+          registry-url: 'https://registry.npmjs.org'
       - run: npm ci
-      - run: npm publish
+      - run: npm publish --public
         env:
           NODE_AUTH_TOKEN: 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
