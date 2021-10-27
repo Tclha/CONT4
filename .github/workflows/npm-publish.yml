@@ -30,7 +30,7 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: npm install npm-cli-login
+      - run: npm install -g npm-cli-login
       - run: npm-cli-login -u lachlanmcnicol -p gKvndA4!NU?WD-4 -e lachlanmcnicol16@gmail.com
       - run: npm publish
         env:
