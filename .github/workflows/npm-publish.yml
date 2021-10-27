@@ -30,6 +30,7 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: npm ci
+      - run: npm config set registry http://registry.npmjs.org
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: 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
