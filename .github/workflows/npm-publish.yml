@@ -30,11 +30,6 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: npm install -g npm-cli-login
-      
-      - run: export NPM_USERNAME=lachlanmcnicol
-      - run: export NPM_PASSWORD=gKvndA4!NU?WD-4
-      - run: export NPM_EMAIL=lachlanmcniol16@gmail.com
-      - run: npm adduser <<! $NPM_USERNAME $NPM_PASSWORD $NPM_EMAIL !
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: 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
