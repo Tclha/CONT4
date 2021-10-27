@@ -10,7 +10,6 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -30,6 +29,6 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: npm publish
+      - run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: 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
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
