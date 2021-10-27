@@ -32,4 +32,4 @@ jobs:
       - run: npm ci
       - run: npm publish
         env:
-          token: ${{ secrets.NPM_TOKEN }}
+          token: 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
