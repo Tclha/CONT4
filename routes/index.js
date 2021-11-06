@@ -23,6 +23,9 @@ router.get('/get-comment', async function(req, res, next) {
     string += "<h2>";
     string += rows[i].Poster;
     string += "</h2>";
+    // string += "<p>";
+    // string += rows[i].FavFood;
+    // string += "</p>";
     string += "<p>";
     string += rows[i].Post;
     string += "</p>";
@@ -32,7 +35,11 @@ router.get('/get-comment', async function(req, res, next) {
 
 router.post('/post-comment', function(req, res, next) {
 
-  pool.query("insert into post values ('"+ req.body.name + "', '" + req.body.name + "', '" + req.body.comment + "');", function (err, rows) {
+  // "insert into post values ('"+ req.body.name + "', '" + req.body.favfood + "', '" + req.body.comment + "');"
+  
+  var request = "insert into post values ('" + req.body.name + "', '" + req.body.comment + "');"
+  
+  pool.query(request, function (err, rows) {
     if (err) throw err
   })
 
