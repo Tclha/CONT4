@@ -24,9 +24,6 @@ router.get('/get-comment', async function(req, res, next) {
     string += rows[i].Poster;
     string += "</h2>";
     string += "<p>";
-    string += rows[i].FavFood;
-    string += "</p>";
-    string += "<p>";
     string += rows[i].Post;
     string += "</p>";
   }
