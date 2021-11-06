@@ -27,7 +27,7 @@ router.get('/get-comment', async function(req, res, next) {
     string += rows[i].Post;
     string += "</p>";
   }
-  string += "api";
+  string += "<p>api</p>";
   res.send(string);
 });
 
