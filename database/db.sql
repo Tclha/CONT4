@@ -6,5 +6,6 @@ USE db_forum;
 
 CREATE TABLE post (
     Poster varchar(255),
+    FavFood varchar(255),
     Post text
 );
